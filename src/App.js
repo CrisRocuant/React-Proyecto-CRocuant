@@ -1,14 +1,16 @@
-
+import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavbarComp } from 'react-bootstrap';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-     <NavbarComp/>
-    </div>
+    <>
+    <Navbar/>
+    </>
   );
+
 }
 
 export default App;
+
+
