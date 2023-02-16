@@ -2,7 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import { products } from './data/products';
-import ItemListContainer from "./page/ItemListContainer/ItemListContainer"
+import ItemListContainer from './page/ItemListContainer/ItemListContainer';
 
 
 function App() {

@@ -42,8 +42,10 @@ const NavContainer = styled.nav`
     font-weight: 400;
     span{
       font-weight: bold;
+      
     }
   }
+  
   padding: .4rem;
   background-color: #333;
   display: flex;
@@ -53,6 +55,7 @@ const NavContainer = styled.nav`
     color: white;
     text-decoration: none;
     margin-right: 1rem;
+   
   }
   .links{
     position: absolute;
@@ -110,6 +113,7 @@ const BgDiv = styled.div`
   width: 100%;
   height: 100%;
   z-index: -1;
+;
   transition: all .6s ease ;
   
   &.active{
