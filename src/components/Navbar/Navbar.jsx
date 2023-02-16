@@ -1,7 +1,7 @@
-
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import BurguerButton from './BurguerButton'
+import BurguerButton from '../Navbar/BurguerButton'
+import CartWidget from '../../components/CartWidget/CartWidget'
 
 function Navbar() {
 
@@ -13,19 +13,22 @@ function Navbar() {
   return (
     <>
       <NavContainer>
-        <h2>Navbar <span>Responsive</span></h2>
+        <h2>Audio <span>Mania</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a onClick={handleClick} href="#h">Home</a>
           <a onClick={handleClick} href="#h">Shop</a>
           <a onClick={handleClick} href="#h">About</a>
           <a onClick={handleClick} href="#h">Contact</a>
           <a onClick={handleClick} href="#h">Blog</a>
+          <div><CartWidget /></div>
+          
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
         </div>
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
       </NavContainer>
+      
     </>
   )
 }
@@ -35,6 +38,7 @@ export default Navbar
 const NavContainer = styled.nav`
   h2{
     color: white;
+    padding: 9px;
     font-weight: 400;
     span{
       font-weight: bold;
